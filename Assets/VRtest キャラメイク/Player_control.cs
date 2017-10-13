@@ -11,14 +11,29 @@ public class Player_control : MonoBehaviour {
     private const float GRAVITY = 9.8f;         // 重力
     private float rotationSpeed = 180.0f;   // プレイヤーの回転速度
 
+    GameObject spotLight;
+    bool lightEnable = true;
     // Use this for initialization
-    void Start () {
+    void Start() {
         charaCon = GetComponent<CharacterController>();
+
+        spotLight = transform.Find("Spotlight").gameObject;
+
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         playerMove_1rdParson();
+
+        // キーボード”ｂ”でライトをオン・オフ切り替え
+        if (Input.GetKeyDown("b"))
+        {
+            lightEnable = !lightEnable;
+            spotLight.GetComponent<Light>().enabled = lightEnable;
+        }
+
+
     }
     // ■■■１人称視点の移動■■■
     private void playerMove_1rdParson()
