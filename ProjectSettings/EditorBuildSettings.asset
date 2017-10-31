@@ -6,14 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/Intro.unity
+    path: "Assets/Kuma/VRtest \u30AD\u30E3\u30E9\u30E1\u30A4\u30AF.unity"
+    guid: 83a4832d6a0094d40b18c6dd13a5112f
   - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/MainMenu.unity
-  - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/Maze.unity
-  - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/Flyer.unity
-  - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/Shooter360.unity
-  - enabled: 1
-    path: Assets/VRSampleScenes/Scenes/Shooter180.unity
+    path: Assets/Kuma/Over.unity
+    guid: 7107506740898ce4fbe4966f075c99c8
