@@ -1,8 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Player_control : MonoBehaviour {
+public class Player_control : MonoBehaviour
+{
 
     private CharacterController charaCon;       // キャラクターコンポーネント用の変数
     private Vector3 move = Vector3.zero;    // キャラ移動量.
@@ -10,11 +14,13 @@ public class Player_control : MonoBehaviour {
     private float jumpPower = 10.0f;        // 跳躍力.
     private const float GRAVITY = 9.8f;         // 重力
     private float rotationSpeed = 180.0f;   // プレイヤーの回転速度
+    private float light_timer = 60;
 
     GameObject spotLight;
     bool lightEnable = true;
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         charaCon = GetComponent<CharacterController>();
 
         spotLight = transform.Find("Spotlight").gameObject;
@@ -25,7 +31,11 @@ public class Player_control : MonoBehaviour {
     void Update()
     {
         playerMove_1rdParson();
+        lightControl();
+    }
 
+    private void lightControl()
+    {
         // キーボード”ｂ”でライトをオン・オフ切り替え
         if (Input.GetKeyDown("b"))
         {
@@ -33,8 +43,20 @@ public class Player_control : MonoBehaviour {
             spotLight.GetComponent<Light>().enabled = lightEnable;
         }
 
+        if (lightEnable == true)
+        {
+            //1秒に1ずつ減らしていく
+            light_timer -= Time.deltaTime;
+            //マイナスは表示しない
+            if (light_timer < 0) light_timer = 0;
+        }
+        if (light_timer == 0)
+        {
+            transform.Find("Spotlight").gameObject.SetActive(false);
+        }
 
     }
+
     // ■■■１人称視点の移動■■■
     private void playerMove_1rdParson()
     {
@@ -67,5 +89,11 @@ public class Player_control : MonoBehaviour {
         // ▼▼▼移動処理▼▼▼
         charaCon.Move(move * Time.deltaTime);   // プレイヤー移動.
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<SkeletonMover>())
+        {
+            SceneManager.LoadScene("Over");
+        }
+    }
 }
