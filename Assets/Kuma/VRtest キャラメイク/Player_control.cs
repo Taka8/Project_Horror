@@ -11,7 +11,7 @@ public class Player_control : MonoBehaviour
     private CharacterController charaCon;       // キャラクターコンポーネント用の変数
     private Vector3 move = Vector3.zero;    // キャラ移動量.
     private float speed = 5.0f;         // 移動速度
-    private float jumpPower = 10.0f;        // 跳躍力.
+    private float jumpPower = 1.0f;        // 跳躍力.
     private const float GRAVITY = 9.8f;         // 重力
     private float rotationSpeed = 180.0f;   // プレイヤーの回転速度
     private float light_timer = 60;
@@ -68,13 +68,7 @@ public class Player_control : MonoBehaviour
 
         // ▼▼▼重力／ジャンプ処理▼▼▼
         move.y += y;
-        if (charaCon.isGrounded)
-        {                   // 地面に設置していたら
-            if (Input.GetKeyDown(KeyCode.Space))
-            {   // ジャンプ処理.
-                move.y = jumpPower;
-            }
-        }
+        
         move.y -= GRAVITY * Time.deltaTime; // 重力を代入.
 
         // ▼▼▼プレイヤーの向き変更▼▼▼
