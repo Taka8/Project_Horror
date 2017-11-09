@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &170560
 GameObject:
   m_ObjectHideFlags: 0
@@ -25,6 +25,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 462124}
+  - component: {fileID: 114830486800494442}
+  - component: {fileID: 136833046075972726}
   m_Layer: 0
   m_Name: key_gold
   m_TagString: Untagged
@@ -52,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 170560}
   m_LocalRotation: {x: 0, y: -0.56557554, z: 0, w: 0.82469654}
-  m_LocalPosition: {x: 3.93, y: 0.27977, z: 74.72}
+  m_LocalPosition: {x: 2.82, y: 0.36, z: 1.3}
   m_LocalScale: {x: 1.8018788, y: 1.8018793, z: 1.8018793}
   m_Children:
   - {fileID: 431008}
@@ -109,3 +111,27 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 170560}
   m_IsPrefabParent: 1
+--- !u!114 &114830486800494442
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c02e246a4ec8684c8d24402ba5dd862, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &136833046075972726
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170560}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
