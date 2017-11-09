@@ -46,7 +46,7 @@ public class Player_control : MonoBehaviour
 
     private void lightControl()
     {
-        // キーボード”ｂ”でライトをオン・オフ切り替え
+        // キーボード”b”でライトをオン・オフ切り替え
         if (Input.GetButtonDown("Light"))
         {
             lightEnable = !lightEnable;
