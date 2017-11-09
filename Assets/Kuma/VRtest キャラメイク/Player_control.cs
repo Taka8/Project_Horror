@@ -9,6 +9,7 @@ public class Player_control : MonoBehaviour
 {
 
     private CharacterController charaCon;       // キャラクターコンポーネント用の変数
+    Animator animator;
     private Vector3 move = Vector3.zero;    // キャラ移動量.
     private float speed = 5.0f;         // 移動速度
     private float jumpPower = 1.0f;        // 跳躍力.
@@ -22,7 +23,7 @@ public class Player_control : MonoBehaviour
     void Start()
     {
         charaCon = GetComponent<CharacterController>();
-
+        animator = GetComponent<Animator>();
         spotLight = transform.Find("Spotlight").gameObject;
 
     }
@@ -37,7 +38,7 @@ public class Player_control : MonoBehaviour
     private void lightControl()
     {
         // キーボード”ｂ”でライトをオン・オフ切り替え
-        if (Input.GetKeyDown("b"))
+        if (Input.GetButtonDown("Light"))
         {
             lightEnable = !lightEnable;
             spotLight.GetComponent<Light>().enabled = lightEnable;
@@ -63,6 +64,9 @@ public class Player_control : MonoBehaviour
         // ▼▼▼移動量の取得▼▼▼
         float y = move.y;
         move = new Vector3(0.0f, 0.0f, Input.GetAxis("Vertical"));      // 上下のキー入力を取得し、移動量に代入.
+
+        animator.SetFloat("Blend", move.z);
+
         move = transform.TransformDirection(move);                          // プレイヤー基準の移動方向へ修正する.
         move *= speed;              // 移動速度を乗算.
 

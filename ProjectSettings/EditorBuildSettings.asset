@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Kuma/Start.unity
+    guid: bcec6e32881f0014b91c6925973a8c80
+  - enabled: 1
     path: "Assets/Kuma/VRtest \u30AD\u30E3\u30E9\u30E1\u30A4\u30AF.unity"
     guid: 83a4832d6a0094d40b18c6dd13a5112f
   - enabled: 1
