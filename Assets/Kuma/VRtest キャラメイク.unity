@@ -254,33 +254,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4541079903856266, guid: cc6a7d59e4bc6ad4799c61276dd0c40f, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0.09374654
+      value: -0.093746535
       objectReference: {fileID: 0}
     - target: {fileID: 4541079903856266, guid: cc6a7d59e4bc6ad4799c61276dd0c40f, type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0.6978552
+      value: 0.6978551
       objectReference: {fileID: 0}
     - target: {fileID: 4541079903856266, guid: cc6a7d59e4bc6ad4799c61276dd0c40f, type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0.70746905
+      value: 0.707469
       objectReference: {fileID: 0}
     - target: {fileID: 4541079903856266, guid: cc6a7d59e4bc6ad4799c61276dd0c40f, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.06080675
-      objectReference: {fileID: 0}
-    - target: {fileID: 1665103385461534, guid: cc6a7d59e4bc6ad4799c61276dd0c40f, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20248960766687486, guid: cc6a7d59e4bc6ad4799c61276dd0c40f,
-        type: 2}
-      propertyPath: m_NormalizedViewPortRect.width
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 20248960766687486, guid: cc6a7d59e4bc6ad4799c61276dd0c40f,
-        type: 2}
-      propertyPath: m_NormalizedViewPortRect.height
-      value: 1
+      value: 0.060806733
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cc6a7d59e4bc6ad4799c61276dd0c40f, type: 2}
