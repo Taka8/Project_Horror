@@ -15,16 +15,25 @@ public class Player_control : MonoBehaviour
     private float jumpPower = 1.0f;        // 跳躍力.
     private const float GRAVITY = 9.8f;         // 重力
     private float rotationSpeed = 180.0f;   // プレイヤーの回転速度
-    private float light_timer = 60;
+    [SerializeField]
+    private float maxLightTime = 60;
+    private float lightTimer;
 
     GameObject spotLight;
     bool lightEnable = true;
+
+    public float LightTimer { get { return lightTimer; } }
+
+    public float MaxLightTime { get { return maxLightTime; } }
+
     // Use this for initialization
     void Start()
     {
         charaCon = GetComponent<CharacterController>();
         animator = GetComponent<Animator>();
         spotLight = transform.Find("Spotlight").gameObject;
+
+        lightTimer = maxLightTime;
 
     }
 
@@ -47,11 +56,11 @@ public class Player_control : MonoBehaviour
         if (lightEnable == true)
         {
             //1秒に1ずつ減らしていく
-            light_timer -= Time.deltaTime;
+            lightTimer -= Time.deltaTime;
             //マイナスは表示しない
-            if (light_timer < 0) light_timer = 0;
+            if (lightTimer < 0) lightTimer = 0;
         }
-        if (light_timer == 0)
+        if (lightTimer == 0)
         {
             transform.Find("Spotlight").gameObject.SetActive(false);
         }
@@ -72,7 +81,7 @@ public class Player_control : MonoBehaviour
 
         // ▼▼▼重力／ジャンプ処理▼▼▼
         move.y += y;
-        
+
         move.y -= GRAVITY * Time.deltaTime; // 重力を代入.
 
         // ▼▼▼プレイヤーの向き変更▼▼▼
