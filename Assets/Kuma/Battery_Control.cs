@@ -2,11 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PaperCrane : MonoBehaviour
+public class Battery_Control : MonoBehaviour
 {
-    public GameObject Enemy;
 
-    // トリガーとの接触時に呼ばれるコールバック
+    
+
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
     void OnTriggerEnter(Collider hit)
     {
 
@@ -16,11 +27,8 @@ public class PaperCrane : MonoBehaviour
             //このコンポーネントを持つGameObjectを破棄する
             Destroy(gameObject);
 
-            //Enemyを非表示
-            Enemy.SetActive(false);
-
-            Debug.Log("hello");
+            Player_control player = FindObjectOfType<Player_control>();
+            player.charge();
         }
-
     }
 }

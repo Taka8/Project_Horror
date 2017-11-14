@@ -103,4 +103,7 @@ public class Player_control : MonoBehaviour
             SceneManager.LoadScene("Over");
         }
     }
+    public void charge() {
+        lightTimer = lightTimer + 20;
+    }
 }
