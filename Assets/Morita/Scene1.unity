@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 675ab929e3bef704a951ee7b7e0084e1, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -635,7 +635,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15494
+  m_Name: pb_Mesh15548
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -1262,7 +1262,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15442
+  m_Name: pb_Mesh15482
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -1399,7 +1399,7 @@ GameObject:
   - component: {fileID: 357136878}
   - component: {fileID: 357136877}
   m_Layer: 0
-  m_Name: Ceiling1
+  m_Name: StairsCeiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18550,7 +18550,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15168
+  m_Name: pb_Mesh15932
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -20366,7 +20366,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15522
+  m_Name: pb_Mesh15576
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -20622,7 +20622,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15710
+  m_Name: pb_Mesh15790
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -21110,7 +21110,7 @@ GameObject:
   - component: {fileID: 961928690}
   - component: {fileID: 961928696}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21496,7 +21496,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15868
+  m_Name: pb_Mesh15946
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -21752,7 +21752,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-1142362
+  m_Name: pb_Mesh15534
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -51872,7 +51872,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15666
+  m_Name: pb_Mesh15746
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -52525,7 +52525,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15554
+  m_Name: pb_Mesh15608
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -52673,7 +52673,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 1
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.15517241, g: 0.15517241, b: 0.15517241, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -52706,13 +52706,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1856411585}
-  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 5, y: 10, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 5, y: 10, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!43 &1894072800
 Mesh:
   m_ObjectHideFlags: 0
@@ -59498,7 +59498,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh-288516
+  m_Name: pb_Mesh15660
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
