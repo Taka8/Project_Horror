@@ -8,7 +8,7 @@ public class Restart_script : MonoBehaviour
 
     public void ButtonPush()
     {
-        SceneManager.LoadScene("VRtest キャラメイク");
+        SceneManager.LoadScene("Scene1");
     }
 
     void Update()

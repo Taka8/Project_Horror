@@ -7,7 +7,7 @@ public class New_game_script : MonoBehaviour {
 
     public void ButtonPush()
     {
-        SceneManager.LoadScene("VRtest キャラメイク");
+        SceneManager.LoadScene("Scene1");
     }
    
  
