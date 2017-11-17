@@ -7,16 +7,16 @@ public class New_game_script : MonoBehaviour {
 
     public void ButtonPush()
     {
-        SceneManager.LoadScene("VRtest キャラメイク");
+        SceneManager.LoadScene("Scene1");
     }
-    // Use this for initialization
-  
-    void Start () {
-		
-	}
+   
+ 
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Input.GetButtonDown("Submit"))
+        {
+            ButtonPush();
+        }
+    }
 }

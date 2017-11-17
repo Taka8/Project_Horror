@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Restart_script : MonoBehaviour {
+public class Restart_script : MonoBehaviour
+{
 
     public void ButtonPush()
     {
-        SceneManager.LoadScene("VRtest キャラメイク");
+        SceneManager.LoadScene("Scene1");
     }
-    // Use this for initialization
-    void Start () {
+
+    void Update()
+    {
+        if (Input.GetButtonDown("Submit"))
+        {
+            ButtonPush();
+        }
     }
-	
-	// Update is called once per frame
-	void Update () {
-
-
 
 }
 
-}
-    

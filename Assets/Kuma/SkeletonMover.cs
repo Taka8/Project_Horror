@@ -4,6 +4,8 @@ using System.Collections;
 public class SkeletonMover : MonoBehaviour
 {
 
+    public GameObject Enemy;
+
     public float chaseDistance = 5f;
 
     [SerializeField]
@@ -16,7 +18,7 @@ public class SkeletonMover : MonoBehaviour
     State myState;
 
     private float timeleft;
-
+    private float time;
 
 
     enum State
@@ -25,9 +27,10 @@ public class SkeletonMover : MonoBehaviour
         Chase
     }
 
+
     void Update()
     {
-
+        
         switch (myState)
         {
             case State.Wait:
@@ -67,17 +70,39 @@ public class SkeletonMover : MonoBehaviour
 
             default:
                 break;
+
         }
+
+
     }
 
     void ChangeState(State state)
     {
 
     }
+   
+
+
+    /// <summary>
+    /// 指定時間gameObjectを非表示にする。
+    /// </summary>
+    /// <param name="duration">消す時間</param>
+    public void Disappear(float duration)
+    {
+        gameObject.SetActive(false);
+
+        Invoke("SetActiveTrue", duration);
+    }
+
+    void SetActiveTrue()
+    {
+        gameObject.SetActive(true);
+    }
+
 
     private void OnGUI()
     {
         GUILayout.Label("Destination" + nav.destination.ToString());
     }
-
 }
+
