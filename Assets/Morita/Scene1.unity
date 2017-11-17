@@ -635,7 +635,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15548
+  m_Name: pb_Mesh15584
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -21107,8 +21107,8 @@ GameObject:
   - component: {fileID: 961928693}
   - component: {fileID: 961928692}
   - component: {fileID: 961928691}
-  - component: {fileID: 961928690}
   - component: {fileID: 961928696}
+  - component: {fileID: 961928690}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -21116,20 +21116,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 127
   m_IsActive: 1
---- !u!64 &961928690
-MeshCollider:
+--- !u!65 &961928690
+BoxCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 961928689}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 2017858174}
+  m_Size: {x: 2, y: 3, z: 0.5}
+  m_Center: {x: 0, y: 1.5, z: -0.25}
 --- !u!114 &961928691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21752,7 +21750,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15534
+  m_Name: pb_Mesh15570
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -22055,7 +22053,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15230
+  m_Name: pb_Mesh15768
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
@@ -59498,7 +59496,7 @@ Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: pb_Mesh15660
+  m_Name: pb_Mesh15696
   serializedVersion: 8
   m_SubMeshes:
   - serializedVersion: 2
