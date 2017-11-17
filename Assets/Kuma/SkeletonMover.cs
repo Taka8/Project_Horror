@@ -4,7 +4,6 @@ using System.Collections;
 public class SkeletonMover : MonoBehaviour
 {
 
-    public GameObject Enemy;
 
     public float chaseDistance = 5f;
 
