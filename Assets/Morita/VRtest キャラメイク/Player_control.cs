@@ -66,7 +66,7 @@ public class Player_control : MonoBehaviour
         }
         if (lightTimer > 0)
         {
-            transform.Find("Spotlight").gameObject.SetActive(true); ;
+            transform.Find("Spotlight").gameObject.SetActive(true); 
         }
 
     }
