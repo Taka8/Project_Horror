@@ -99,9 +99,6 @@ public class SkeletonMover : MonoBehaviour
     }
 
 
-    private void OnGUI()
-    {
-        GUILayout.Label("Destination" + nav.destination.ToString());
-    }
+   
 }
 
